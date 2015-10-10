@@ -1,0 +1,11 @@
+<p>
+  <strong>Name:</strong>
+  <%= @wallpaper.name %>
+</p>
+
+<p>
+  <%= image_tag @wallpaper.image.thumb.url %>
+</p>
+
+<%= link_to 'Edit', edit_wallpaper_path(@wallpaper) %> |
+<%= link_to 'Back', wallpapers_path %>

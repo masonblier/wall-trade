@@ -1,5 +1,12 @@
 <h1>Editing wallpaper</h1>
 
-<%= render 'form' %>
+<%= react_component 'WallpaperForm', {
+    data: @wallpaper,
+    errors: @wallpaper.errors,
+    form: {
+        mode: 'edit',
+        token: form_authenticity_token.to_s
+      }
+    } %>
 
 <%= link_to 'Back', wallpapers_path %>

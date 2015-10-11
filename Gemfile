@@ -16,6 +16,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'unicorn'
 # gem 'capistrano-rails', group: :development
 
+gem 'react-rails', '~> 1.3.0'
+
 gem 'carrierwave'
 gem 'rmagick'
 

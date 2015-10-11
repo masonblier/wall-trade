@@ -1,19 +1,2 @@
-<h1>Listing wallpapers</h1>
-
-<%= link_to 'New wallpaper', new_wallpaper_path %>
-<table>
-  <tr>
-    <th>Name</th>
-  </tr>
-
-  <% @wallpapers.each do |wallpaper| %>
-    <tr>
-      <td><%= wallpaper.name %></td>
-      <td><%= link_to 'Show', wallpaper_path(wallpaper) %></td>
-      <td><%= link_to 'Edit', edit_wallpaper_path(wallpaper) %></td>
-      <td><%= link_to 'Destroy', wallpaper_path(wallpaper),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
-</table>
+<%= link_to 'New Wallpaper', new_wallpaper_path %>
+<%= react_component 'Wallpapers', { data: @wallpapers } %>

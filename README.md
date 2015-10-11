@@ -5,8 +5,9 @@ Wallpaper gallery and sharing site.
 
 Dependencies
 ---
-[Rails](http://rubyonrails.org/) 4.x
-[ImageMagick](http://www.imagemagick.org/script/index.php) 6.3.5 or later
+- [Rails](http://rubyonrails.org/) 4.x
+- [ImageMagick](http://www.imagemagick.org/script/index.php) 6.3.5 or later
+- [PostgreSQL](http://www.postgresql.org/) 9.x
 
 Setup
 ---

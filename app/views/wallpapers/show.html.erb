@@ -1,11 +1,4 @@
-<p>
-  <strong>Name:</strong>
-  <%= @wallpaper.name %>
-</p>
-
-<p>
-  <%= image_tag @wallpaper.image.thumb.url %>
-</p>
+<%= react_component 'Wallpaper', { data: @wallpaper } %>
 
 <%= link_to 'Edit', edit_wallpaper_path(@wallpaper) %> |
 <%= link_to 'Back', wallpapers_path %>

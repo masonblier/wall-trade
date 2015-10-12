@@ -9,10 +9,12 @@ class WallpapersController < ApplicationController
 
   def new
     @wallpaper = Wallpaper.new
+    @all_tags = Wallpaper.tags_on(:tags).map{|t| t.name}
   end
 
   def edit
     @wallpaper = Wallpaper.find(params[:id])
+    @all_tags = Wallpaper.tags_on(:tags).map{|t| t.name}
   end
 
   def create
@@ -42,7 +44,7 @@ class WallpapersController < ApplicationController
 
   private
     def wallpaper_params
-      params.require(:wallpaper).permit(:name, :image)
+      params.require(:wallpaper).permit(:name, :image, :tag_list)
     end
 
 end

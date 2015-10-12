@@ -17,6 +17,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem 'react-rails', '~> 1.3.0'
+gem 'acts-as-taggable-on', '~> 3.4'
 
 gem 'carrierwave'
 gem 'rmagick'

@@ -14,6 +14,13 @@
     div className: "wallpaper",
       div null,
         @props.data.name
+      div null,
+        for tag in @props.data.tags
+          a
+            className: "tag-link"
+            key: tag
+            href: "#" # TODO link to tag browse
+            tag
       a
         className: "wallpaper-expand"
         href: "#"

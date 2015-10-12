@@ -15,5 +15,7 @@
 //= require turbolinks
 //= require react
 //= require react_ujs
+//= require ReactDnD.min.js
+//= require reactTags.min.js
 //= require components
 //= require_tree .

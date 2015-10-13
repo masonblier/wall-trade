@@ -24,11 +24,11 @@ div.ReactTags__selected {
 }
 div.ReactTags__selected span.ReactTags__tag {
     border: 1px solid #ddd;
-    background: #eee;
+    /*background: #eee;*/
     font-size: 12px;
     display: inline-block;
     padding: 5px;
-    margin: 0 5px;
+    margin-right: 5px;
     cursor: move;
     border-radius: 2px;
 }
@@ -48,9 +48,10 @@ div.ReactTags__suggestions ul {
     list-style-type: none;
     box-shadow: .05em .01em .5em rgba(0,0,0,.2);
     background: white;
-    width: 204px;
+    width: 212px;
 }
 div.ReactTags__suggestions li {
+    color: black;
     border-bottom: 1px solid #ddd;
     padding: 5px 10px;
     margin: 0;

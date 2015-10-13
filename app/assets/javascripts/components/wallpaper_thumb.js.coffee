@@ -6,8 +6,8 @@
     div className: "wallpaper-thumb",
       a
         href: "/wallpapers/#{@props.wallpaper.id}"
-        div null,
-          @props.wallpaper.name
         img
           alt: ""
           src: @props.wallpaper.image.thumb.url
+        div null,
+          @props.wallpaper.name

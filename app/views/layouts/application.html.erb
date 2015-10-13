@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="wrap">
 
-<%= yield %>
+<div class="header">
+  <a href="/" class="brand">Wall Trade</a>
+</div>
 
+<div class="app">
+  <%= yield %>
+</div>
+
+</div>
 </body>
 </html>

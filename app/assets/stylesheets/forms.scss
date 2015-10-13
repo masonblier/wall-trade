@@ -1,0 +1,44 @@
+// form styles
+
+.form-group {
+  margin: 15px 0;
+}
+
+label {
+  display: block;
+}
+
+input[type=text], textarea, button {
+  background: #222;
+  color: white;
+  border: 1px solid #777;
+}
+input[type=text], textarea {
+  padding: 2px 5px;
+  height: 22px;
+  min-width: 200px;
+}
+button {
+  border-radius: 4px;
+  padding: 7px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+button[disabled] {
+  background: #444;
+  color: #ccc;
+}
+button:hover, button:active {
+  background: #202828;
+  &[disabled] {
+    background: #444;
+  }
+}
+
+input[type=text]:focus, textarea:focus, button:focus {
+  outline-color: #0bd;
+}
+
+div.ReactTags__selected span.ReactTags__tag {
+  background: #333;
+}

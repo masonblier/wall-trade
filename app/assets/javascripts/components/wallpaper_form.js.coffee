@@ -38,12 +38,12 @@
           value: 'patch'
 
       if @state.form_errors
-        React.DOM.p null,
+        React.DOM.div className: "form-group",
           for field of @state.form_errors
             for error in @state.form_errors[field]
               React.DOM.div className: 'form-error', "#{field} #{error}"
 
-      React.DOM.p null,
+      React.DOM.div className: "form-group",
         React.DOM.label null, "Name:"
         React.DOM.input
           type: 'text'
@@ -52,7 +52,7 @@
           value: @state.name
           onChange: @handleChange
 
-      React.DOM.p null,
+      React.DOM.div className: "form-group",
         React.DOM.label null, "Image:"
         React.DOM.input
           type: 'file'
@@ -64,14 +64,14 @@
         name: 'wallpaper[tag_list]'
         value: @state.tags.join(", ")
 
-      React.DOM.p null,
+      React.DOM.div className: "form-group",
         React.DOM.label null, "Tags:"
         React.createElement WallpaperTagsField,
           tags: @props.data.tags
           all_tags: @props.all_tags
           handleChange: @handleTagsChange
 
-      React.DOM.p null,
+      React.DOM.div className: "form-group",
         React.DOM.button
           type: 'submit'
           disabled: !@valid()

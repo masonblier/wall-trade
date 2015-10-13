@@ -15,6 +15,64 @@
  *= require_self
  */
 
+body {
+}
+
+.wrap {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin: 38px 0 0 0;
+  overflow-y: auto;
+  font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+.app {
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+@media(min-width: 690px) {
+  .app {
+    width: 650px;
+  }
+}
+@media(min-width: 1020px) {
+  .app {
+    width: 980px;
+  }
+}
+
+a {
+  color: #3ef;
+}
+a:hover, a:active {
+  color: #0bd;
+}
+
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 38px;
+  background: #003f50;
+  color: white;
+}
+a.brand {
+  display: inline-block;
+  margin: 4px 8px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #cff;
+}
+a.brand:hover, a.brand:active {
+  color: #8fd;
+}
+
+/* misc */
 .actions {
   margin: 1em 0;
 }

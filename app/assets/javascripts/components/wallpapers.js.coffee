@@ -7,10 +7,10 @@
   render: ->
     React.DOM.div
       className: 'wallpapers'
-      React.DOM.h2
-        className: 'title'
-        'Wallpapers'
       React.DOM.div
         className: 'wallpapers-thumbs'
-        for wallpaper in @state.wallpapers
-          React.createElement WallpaperThumb, key: wallpaper.id, wallpaper: wallpaper
+        if @state.wallpapers?.length > 0
+          for wallpaper in @state.wallpapers
+            React.createElement WallpaperThumb, key: wallpaper.id, wallpaper: wallpaper
+        else
+          "No wallpapers found."

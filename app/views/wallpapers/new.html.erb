@@ -10,4 +10,7 @@
       }
     } %>
 
-<%= link_to 'Back', wallpapers_path %>
+<div class="actions">
+  <%= link_to 'Back', wallpaper_path(@wallpaper) %> |
+  <%= link_to 'Top', wallpapers_path %>
+</div>

@@ -1,4 +1,6 @@
 <%= react_component 'Wallpaper', { data: @wallpaper } %>
 
-<%= link_to 'Edit', edit_wallpaper_path(@wallpaper) %> |
-<%= link_to 'Back', wallpapers_path %>
+<div class="actions">
+  <%= link_to 'Edit', edit_wallpaper_path(@wallpaper) %> |
+  <%= link_to 'Top', wallpapers_path %>
+</div>

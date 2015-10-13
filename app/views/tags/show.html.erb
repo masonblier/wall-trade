@@ -1,0 +1,3 @@
+<h1>Tag: <%= params[:id] %></h1>
+<%= react_component 'Wallpapers', { data: (@wallpapers or []) } %>
+<div class="actions"><%= link_to "Top", wallpapers_path %></div>

@@ -19,7 +19,7 @@
           a
             className: "tag-link"
             key: tag
-            href: "#" # TODO link to tag browse
+            href: "/tags/#{tag}"
             tag
       a
         className: "wallpaper-expand"

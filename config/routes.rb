@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resources :wallpapers
-  # resources :tags
+  resources :tags, only: [:show]
 
   root 'home#index'
 end

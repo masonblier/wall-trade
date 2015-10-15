@@ -1,2 +1,8 @@
-<h1>Home#index</h1>
-<%= link_to 'Wallpapers', controller: 'wallpapers' %>
+<h1>Popular Tags</h1>
+<%= link_to 'All Wallpapers', controller: 'wallpapers' %>
+
+<% @wallpaper_sets.each do |ws| %>
+  <% if ws[:wallpapers].count > 0 %>
+    <%= react_component 'WallpaperSet', ws %>
+  <% end %>
+<% end %>

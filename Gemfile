@@ -25,6 +25,7 @@ gem 'rmagick'
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
+  gem 'teaspoon-jasmine'
 end
 
 group :development do
